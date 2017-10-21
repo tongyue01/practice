@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var m=new Map();
+    m.set('1',1);
+    m.set('b',2);
+    m.delete('a');
+    m.set('b',3);
+    console.log(m);
+    m.forEach(function(value,key){
+        console.log(value);
+    });
+    var arr=[1,2,3,4];
+    arr.forEach(function(value,key){
+        console.log(value);
+    });
+</script>
+
+</body>
+</html>
