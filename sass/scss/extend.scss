@@ -10,3 +10,39 @@ p{
   @extend div;
   background-color: #fff;
 }
+$flag:false;
+span{
+  @if($flag){
+    color:#fff;
+  }@else {
+    color:#000;
+  }
+}
+@for $i from 1 through 4{
+  .col-#{$i}{
+    width:20px*$i;
+  }
+}
+$list:success,fail,warn;
+@each $var in $list{
+  .#{$var}{
+    background: url($var +".jpg");
+  }
+}
+$j:4;
+@while $j>0{
+  .row-#{$j}{
+    width:20px*$j;
+  }
+  $j:$j - 1;
+}
+@function add($a,$b){
+  @return $a + $b;
+}
+h1{
+  width:add(20px,30px);
+}
+
+
+
+
