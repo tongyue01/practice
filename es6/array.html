@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a1=[3];
+    var a2= new Array(3);
+    var a3=Array.of(3);
+    console.log(a1);
+    console.log(a2);
+    console.log(a3);
+    var set =new Set([1,2,3]);
+    console.log(Array.from(set));
+    var m= new Map();
+    m.set('a',1);
+    m.set('b',2);
+    console.log(Array.from(m));
+    var obj={
+        0:1,
+        a:2,
+        2:3,
+        length:2
+    }
+    console.log(Array.from(obj));
+    var arr=[1,2,3,4,5,6,7,8,9,0];
+    console.log(arr.copyWithin(2,4,7));
+    var val=arr.findIndex((value,indexd6)=>{
+                value++;
+                return value > 5;
+            });
+    console.log(val);
+</script>
+
+</body>
+</html>
