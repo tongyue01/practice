@@ -96,6 +96,7 @@
         });
         $('#product-list').on('click','.del',function(){
             $(this).parent('tr').remove();
+            changeTotal();
         });
         function changeTotal(){
             var $aBox=$(':checked');
